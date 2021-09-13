@@ -1,0 +1,120 @@
+@import "null";
+@import "functions";
+@import "components/header";
+@import "components/mainForm";
+@import "components/geography";
+@import "components/portfolio";
+@import "components/benefits";
+@import "components/about";
+@import "components/contacts";
+@import "components/footer";
+*{
+  box-sizing: border-box;
+}
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+}
+.container {
+  border: 1px solid transparent;
+  width: size(1200, 1600);
+  margin: 0 auto;
+  @media (max-width: 960px) {
+    width: size(618, 700);
+  }
+  @media (max-width: 480px) {
+    width: size(297, 320);
+  }
+}
+
+.title{
+  font-size: size(35, 1600);
+  line-height: size(44, 1600);
+}
+
+.btn{
+  cursor: pointer;
+  background-color: #FD6612;
+  font-weight: bold;
+  transition: .1s ease-in-out;
+  &:hover{
+    transition: .1s ease-in-out;
+    background-color: #ff7d42 !important;
+  }
+  &:active{
+    background-color: #ff9b74 !important;
+  }
+}
+
+.form__item{
+  .form__label{
+    font-weight: 300;
+    font-size: size(14, 1600);
+    line-height: size(18, 1600);
+    color: #001A33;
+  }
+  .form__input{
+    margin-top: size(3, 1600);
+    background: #FFFFFF;
+    border: 1px solid #E7ECF3;
+    box-sizing: border-box;
+    border-radius: size(5, 1600);
+    padding: size(14, 1600);
+    &::placeholder{
+      font-family: 'Geometria', sans-serif;
+      font-weight: normal;
+      font-size: size(14, 1600);
+      line-height: size(18, 1600);
+      color: rgba(16, 16, 16, 0.4);
+    }
+  }
+}
+
+@media (max-width: 960px) {
+  .form__item{
+    margin-bottom: size(16, 700);
+    width: 100%;
+    .form__label{
+      font-size: size(14, 700);
+      line-height: size(18, 700);
+    }
+    .form__input{
+      width: 100%;
+      margin-top: size(3, 700);
+      border-radius: size(5, 700);
+      padding: size(14, 700);
+      &::placeholder{
+        font-size: size(14, 700);
+        line-height: size(18, 700);
+      }
+      &.mail{
+        width: 100%
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .form__item{
+    margin-bottom: size(16, 320);
+    width: 100%;
+    .form__label{
+      font-size: size(14, 320);
+      line-height: size(18, 320);
+    }
+    .form__input{
+      width: 100%;
+      margin-top: size(3, 320);
+      border-radius: size(5, 320);
+      padding: size(14, 320);
+      &::placeholder{
+        font-size: size(14, 320);
+        line-height: size(18, 320);
+      }
+      &.mail{
+        width: 100%
+      }
+    }
+  }
+}

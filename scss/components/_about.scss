@@ -1,0 +1,173 @@
+@import "../functions";
+
+.about{
+  background: #F4F8FF;
+  padding-bottom: size(145, 1600);
+  .title{
+    font-weight: 500;
+    color: #001A33;
+    margin-top: size(81, 1600);
+  }
+}
+.about__content{
+  position: relative;
+  margin-top: size(60, 1600);
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  .about__card{
+    display: flex;
+    flex-direction: column;
+    padding: size(73, 1600);
+    width: size(585, 1600);
+    height: size(588, 1600);
+    background: url("../img/about-card.png"), #4169c1;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    z-index: 5;
+    background-blend-mode: screen;
+    //position: absolute;
+    .about__card-title{
+      font-weight: 500;
+      font-size: size(22, 1600);
+      line-height: size(28, 1600);
+      color: #FFFFFF;
+    }
+    .about__card-descr{
+      font-weight: normal;
+      font-size: size(16, 1600);
+      line-height: size(25, 1600);
+      color: #FFFFFF;
+      opacity: 0.7;
+      margin-top: size(14, 1600);
+    }
+    .about__card-img{
+      img{
+        width: size(132, 1600);
+        height: size(185, 1600);
+        margin-right: size(23, 1600);
+        margin-top: size(15, 1600);
+      }
+    }
+  }
+  .about__img{
+     position: absolute;
+    height: size(441, 1600);
+    right: 0;
+    z-index: 1;
+  }
+}
+
+@media (max-width: 960px) {
+  .about{
+    height: size(965, 700);
+    padding-bottom: size(70, 700);
+    position: relative;
+    .title{
+      font-weight: 500;
+      color: #001A33;
+      margin-top: size(70, 700);
+      font-size: size(30, 700);
+      line-height: size(38, 700);
+    }
+  }
+  .about__content{
+    position: unset !important;
+    flex-direction: column;
+    margin-top: size(27, 700);
+    .about__card{
+      padding: size(55, 700);
+      width: 100%;
+      height: size(588, 700);
+      background: url("../img/about-card.png"), #4169c1;
+      background-size: 100% 65%;
+      background-repeat: no-repeat;
+      background-position: center bottom;
+      .about__card-title{
+        font-weight: 500;
+        font-size: size(22, 700);
+        line-height: size(28, 700);
+        color: #FFFFFF;
+      }
+      .about__card-descr{
+        font-weight: normal;
+        font-size: size(16, 700);
+        line-height: size(25, 700);
+        color: #FFFFFF;
+        opacity: 0.7;
+        margin-top: size(14, 700);
+      }
+      .about__card-img{
+        img{
+          width: size(132, 700);
+          height: size(185, 700);
+          margin-right: size(23, 700);
+          margin-top: size(35, 700);
+        }
+      }
+    }
+    .about__img{
+      width: 100%;
+      height: size(390, 700);
+      top: size(550, 700);
+      bottom: 0;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .about{
+    height: size(965, 320);
+    padding-bottom: size(65, 320);
+    position: relative;
+    .title{
+      margin-top: size(42, 320);
+      font-size: size(26, 320);
+      line-height: size(33, 320);
+    }
+  }
+  .about__content{
+    position: unset !important;
+    flex-direction: column;
+    margin-top: size(25, 320);
+    .about__card{
+      padding: size(30, 320);
+      width: 100%;
+      height: size(660, 320);
+      background: url("../img/about-card.png"), #4169c1;
+      background-size: 150% 60%;
+      background-repeat: no-repeat;
+      background-position: right bottom;
+      .about__card-title{
+        font-weight: 500;
+        font-size: size(22, 320);
+        line-height: size(28, 320);
+        color: #FFFFFF;
+      }
+      .about__card-descr{
+        font-weight: normal;
+        font-size: size(14, 320);
+        line-height: size(22, 320);
+        color: #FFFFFF;
+        opacity: 0.7;
+        margin-top: size(12, 320);
+      }
+      .about__card-img{
+        display: flex;
+        justify-content: space-between;
+        img{
+          width: size(110, 320);
+          height: size(155, 320);
+          margin-right: size(20, 320);
+          margin-top: size(35, 320);
+        }
+      }
+    }
+    .about__img{
+      width: 100%;
+      height: size(250, 320);
+      top: size(600, 320);
+      bottom: 0;
+    }
+  }
+}

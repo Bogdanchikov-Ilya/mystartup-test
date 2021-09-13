@@ -1,0 +1,111 @@
+@import "../functions";
+
+footer{
+  height: size(93, 1600);
+  width: 100%;
+  background: #001A33;
+  .container{
+    height: 100%;
+  }
+}
+
+.footer__content{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  span{
+    font-weight: 300;
+    font-size: size(14, 1600);
+    line-height: size(18, 1600);
+    color: rgba(255, 255, 255, 0.53);
+  }
+  div{
+    display: flex;
+  }
+  p{
+    color: white;
+    display: flex;
+    align-items: center;
+    font-weight: normal;
+    font-size: size(14, 1600);
+    line-height: size(18, 1600);
+    text-align: center;
+    text-decoration-line: underline;
+  }
+  img{
+    width: size(10, 1600);
+    margin-right: size(8, 1600);
+  }
+}
+
+@media (max-width: 960px) {
+  footer{
+    border-top: 2px solid white;
+    height: size(180, 700);
+    width: 100%;
+    background: #001A33;
+  }
+
+  .footer__content{
+    padding: size(38, 700) 0;
+    align-items: start;
+    flex-direction: column;
+    span{
+      font-weight: 300;
+      font-size: size(14, 700);
+      line-height: size(18, 700);
+      color: rgba(255, 255, 255, 0.53);
+    }
+    div{
+      align-items: start;
+    }
+    p{
+      text-align: start;
+      justify-content: start;
+      max-width: size(400, 1600);
+      font-size: size(14, 700);
+      line-height: size(19, 700);
+    }
+    img{
+      width: size(12, 700);
+      margin-right: size(8, 700);
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  footer{
+    border-top: 0;
+    height: size(200, 320);
+    width: 100%;
+    background: #001A33;
+  }
+
+  .footer__content{
+    padding: size(38, 320) 0;
+    align-items: start;
+    flex-direction: column;
+    span{
+      margin-top: size(20, 320);
+      font-weight: 300;
+      font-size: size(14, 320);
+      line-height: size(18, 320);
+      color: rgba(255, 255, 255, 0.53);
+    }
+    div{
+      align-items: start;
+    }
+    p{
+      text-align: start;
+      justify-content: start;
+      max-width: 100%;
+      font-size: size(14, 320);
+      line-height: size(19, 320);
+    }
+    img{
+      width: size(12, 320);
+      margin-right: size(8, 320);
+    }
+  }
+}

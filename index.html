@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="stylesheet" href="fonts/Geometria/Geometria.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+
+<!--  slider-->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <title>Тестовое задание</title>
+</head>
+<!--  Да, тупанул, использовал border для отладки, могу переделать-->
+<body>
+  <div class="wrapper">
+    <header>
+      <div class="container">
+        <div class="header-content">
+          <a href="#" class="header-logo">
+            <img src="img/logo.png" alt="Лого">
+            <div class="header-logo__text">
+              <span class="bold">Название</span>
+              <span>И какой нибудь лозунг</span>
+            </div>
+          </a>
+          <nav class="header-menu">
+            <ul>
+              <li><a href="#">главная</a></li>
+            </ul>
+            <ul>
+              <li><a href="#" class="active">портфолио</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">о нас</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">география</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">контакты</a></li>
+            </ul>
+          </nav>
+          <p class="header-phone">
+            <img src="img/PhoneCall.svg" alt="">
+            8(902)272-93-14
+          </p>
+
+          <div class="burger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="main-form">
+      <div class="container">
+        <div class="main-form__text">
+          <p class="main__form__title">
+            Услуги по строительству и ремонту железнодорожных путей
+          </p>
+          <p class="main-form__subtitle">
+            Компания проводит строительные и ремонтные работы на территории более чем 20 субъектов Российской Федерации
+          </p>
+        </div>
+        <div class="form__wrapper">
+          <p class="form__title">Оставьте заявку <br /> на <span>бесплатную</span> консультацию</p>
+          <form action="#" class="main-form__form">
+            <div class="form__item">
+              <div class="form__label">Имя</div>
+              <input type="text" class="form__input" placeholder="Михаил">
+            </div>
+            <div class="form__item">
+              <div class="form__label">Телефон</div>
+              <input type="text" class="form__input" placeholder="8 (800) 535 35 35">
+            </div>
+            <div class="form__item">
+              <div class="form__label">Почта</div>
+              <input type="text" class="form__input mail" placeholder="company@mail.com">
+            </div>
+            <input type="submit" class="form__input submit btn" placeholder="отправить">
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="geography">
+      <div class="container">
+        <div class="geography-content">
+          <div class="geography__text">
+            <p class="geography__text title">География работ</p>
+            <p class="geography__text subtitle">ООО «Компания» реализует проекты на всей территории Российской Федерации.</p>
+            <p class="geography__text descr">Компания проводит строительные и ремонтные работы на территории более чем 20 субъектов Российской Федерации, постоянно расширяя географию присутствия на всю территорию страны. Работа компании ведется как в крупных городах областного значения, так и в небольших населенных пунктах. Заказчиками могут быть региональные или федеральные компании, крупные компании из разных сфер деятельности,заинтересованные в осуществлении транспортных проектов.</p>
+          </div>
+          <img src="img/map.png" alt="Россия">
+        </div>
+      </div>
+    </section>
+    <section class="portfolio">
+      <div class="container">
+        <p class="title">Наше портфолио</p>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="img/sldier.png" alt="Рельсы">
+              <div class="slider__card">
+                <p class="slider-title">Ремонт эстакад</p>
+                <p class="slider-subtitle">Капитальный ремонт и еще че нибудь напишите а то слишком мало выходит</p>
+                <div class="slider__list">
+                  <p class="slider__list-title">Проделанные работы:</p>
+                  <ul>
+                    <li>
+                      <img src="img/Check.svg" alt="Галка">
+                      Выкопали ямы (незнай зачем)
+                    </li>
+                    <li>
+                      <img src="img/Check.svg" alt="Галка">
+                      Положили рельсы
+                    </li>
+                    <li>
+                      <img src="img/Check.svg" alt="Галка">
+                      Рельсы рельсы, шпалы шпалы
+                    </li>
+                    <li>
+                      <img src="img/Check.svg" alt="Галка">
+                      Ехал поезд запоздалый
+                    </li>
+                  </ul>
+                </div>
+                <div class="slider__card-button btn">Оставить заявку</div>
+              </div>
+            </div>
+            <div class="swiper-slide">Slide 2</div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+    </section>
+    <section class="benefits">
+      <div class="container">
+        <p class="title">Преимущества работы с нами</p>
+        <div class="benefits__content">
+          <div class="benefits__item">
+            <div class="benefits__img">
+              <img src="img/benefits/Money.svg" alt="Преимущества">
+            </div>
+            <div class="benefits__text">
+              <p class="benefits__text-title">Экономия стредств</p>
+              <p class="benefits__text-descr">Специалисты нашей компании грамотно рассчитываю объем работ и количество затрачиваемых материалов, что позволяет исключить дополнительные расходы на заключительных этапах.</p>
+            </div>
+          </div>
+          <div class="benefits__item">
+            <div class="benefits__img">
+              <img src="img/benefits/Lightbulb.svg" alt="Преимущества">
+            </div>
+            <div class="benefits__text">
+              <p class="benefits__text-title">Большой опыт</p>
+              <p class="benefits__text-descr">Специалисты нашей компании грамотно рассчитываю объем работ и количество затрачиваемых материалов, что позволяет исключить дополнительные расходы на заключительных этапах.</p>
+            </div>
+          </div>
+          <div class="benefits__item">
+            <div class="benefits__img">
+              <img src="img/benefits/Wallet.svg" alt="Преимущества">
+            </div>
+            <div class="benefits__text">
+              <p class="benefits__text-title">Удобная оплата</p>
+              <p class="benefits__text-descr">Специалисты нашей компании грамотно рассчитываю объем работ и количество затрачиваемых материалов, что позволяет исключить дополнительные расходы на заключительных этапах.</p>
+            </div>
+          </div>
+          <div class="benefits__item">
+            <div class="benefits__img">
+              <img src="img/benefits/ThumbsUp.svg" alt="Преимущества">
+            </div>
+            <div class="benefits__text">
+              <p class="benefits__text-title">Оперативность</p>
+              <p class="benefits__text-descr">Специалисты нашей компании грамотно рассчитываю объем работ и количество затрачиваемых материалов, что позволяет исключить дополнительные расходы на заключительных этапах.</p>
+            </div>
+          </div>
+          <div class="benefits__item">
+            <div class="benefits__img">
+              <img src="img/benefits/Eject.svg" alt="Преимущества">
+            </div>
+            <div class="benefits__text">
+              <p class="benefits__text-title">Высокий сервис</p>
+              <p class="benefits__text-descr">Специалисты нашей компании грамотно рассчитываю объем работ и количество затрачиваемых материалов, что позволяет исключить дополнительные расходы на заключительных этапах.</p>
+            </div>
+          </div>
+          <div class="benefits__item">
+            <div class="benefits__img">
+              <img src="img/benefits/CircleWavyCheck.svg" alt="Преимущества">
+            </div>
+            <div class="benefits__text">
+              <p class="benefits__text-title">Качество</p>
+              <p class="benefits__text-descr">Специалисты нашей компании грамотно рассчитываю объем работ и количество затрачиваемых материалов, что позволяет исключить дополнительные расходы на заключительных этапах.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="about">
+      <div class="container">
+        <p class="title">О нашей компании</p>
+        <div class="about__content">
+          <div class="about__card">
+            <p class="about__card-title">Компания ООО”Название”</p>
+            <p class="about__card-descr">Оказывает широкий спектр услуг по строительству и ремонту железнодорожных путей, Ремонт железнодорожных тупиков, стрелочных переводов, переездов. Опытные сотрудники, наличие необходимого оборудования позволяет в кратчайшие сроки выполнить работы любой сложности качественно и в кратчайшие сроки. Гибкая ценовая политика, наличие СРО. Подбор материалов от новых до Б/У от партнёров.</p>
+            <div class="about__card-img">
+              <img src="img/about-card-docs.png" alt="Награда">
+              <img src="img/doc-back.png" alt="Награда">
+            </div>
+          </div>
+          <img src="img/about.png" class="about__img" alt="Рельсы">
+        </div>
+      </div>
+    </section>
+    <section class="contacts">
+      <div class="container">
+        <div class="contacts__content">
+          <div class="contact__text">
+            <p class="contacts__title title">Контакты</p>
+            <div class="contacts__item">
+              <p class="label">Телефон:</p>
+              <div class="info">
+                <p>8(902)272-93-14</p>
+                <p>8(902)272-93-14</p>
+              </div>
+            </div>
+            <div class="contacts__item">
+              <p class="label">Email:</p>
+              <p class="info">nasvaniye@mail.ru</p>
+            </div>
+            <div class="contacts__item">
+              <p class="label">Адрес:</p>
+              <p class="info">г. Екатеринбург, ул.  Колмогорова, дом 67</p>
+            </div>
+            <div class="contacts__media">
+              <p class="contacts__media-tile">ООО “Название”</p>
+              <div class="contacts__media-links">
+                <img src="img/icons/whatsapp.svg" alt="">
+                <img src="img/icons/Phone.svg" alt="">
+                <img src="img/icons/Envelope.svg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="contacts-form">
+            <p class="form__title">Остались вопросы?</p>
+            <form action="#">
+              <div>
+                <div class="form__item">
+                  <p class="form__label">Имя</p>
+                  <input type="text" class="form__input" placeholder="Михаил">
+                </div>
+                <div class="form__item">
+                  <p class="form__label">Телефон</p>
+                  <input type="text" class="form__input" placeholder="8 (800) 535 35 35">
+                </div>
+                <div class="form__item">
+                  <p class="form__label">Почта</p>
+                  <input type="text" class="form__input" placeholder="company@mail.com">
+                </div>
+                <div class="checkbox pc">
+                  <input type="checkbox" id="agreement" checked name="agreement" class="checkbox__input _req">
+                  <label for="agreement"  class="checkbox__label">
+                    <span>Даю свое согласие <br>
+                    с <a href="#">политикой конфиденциальности</a></span>
+                  </label>
+                </div>
+              </div>
+              <div class="ml">
+                <div class="form__item comment__item">
+                  <p class="form__label">Комментарий</p>
+                  <textarea name="Комментарий" class="form__input comment" id="comment" placeholder="Напишите ваш вопрос..."></textarea>
+                </div>
+                <div class="contacts__button btn">
+                  Отправить
+                </div>
+                <div class="checkbox mobile">
+                  <input type="checkbox" id="agreement2" checked name="agreement" class="checkbox__input _req">
+                  <label for="agreement2"  class="checkbox__label">
+                    <span>Даю свое согласие <br>
+                    с <a href="#">политикой конфиденциальности</a></span>
+                  </label>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="footer__content">
+          <span>Все права защищены</span>
+          <div>
+            <img src="img/footer-icon.svg" alt="ТвойСтартап">
+            <p>Разработка сайта - студия “ТвойСтартап”</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+
+  <script src="js/slider.js"></script>
+  <script src="js/menu.js"></script>
+</body>
+</html>
