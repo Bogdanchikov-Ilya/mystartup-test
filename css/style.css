@@ -83,6 +83,8 @@ h6 {
 }
 
 .header-content {
+  -webkit-transition: 0.15s ease-in-out;
+  transition: 0.15s ease-in-out;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -133,6 +135,8 @@ h6 {
 }
 
 .header-menu {
+  -webkit-transition: 0.15s ease-in-out;
+  transition: 0.15s ease-in-out;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -195,7 +199,45 @@ h6 {
 
 @media (max-width: 960px) {
   .header-content {
+    -webkit-transition: 0.15s ease-in-out;
+    transition: 0.15s ease-in-out;
     height: 12.8571428571vw;
+  }
+  .header-content.active {
+    -webkit-transition: 0.15s ease-in-out;
+    transition: 0.15s ease-in-out;
+    margin-top: 4.2857142857vw;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    height: 71.4285714286vw;
+  }
+  .header-content.active .header-menu {
+    -webkit-transition: 0.15s ease-in-out;
+    transition: 0.15s ease-in-out;
+    margin: auto;
+    position: absolute;
+    top: 21.4285714286vw;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .header-content.active .header-menu ul {
+    -webkit-transition: 0.15s ease-in-out;
+    transition: 0.15s ease-in-out;
+  }
+  .header-content.active .header-menu ul li {
+    margin-bottom: 4.2857142857vw;
+  }
+  .header-content.active .header-menu ul li a {
+    font-size: 4.2857142857vw;
   }
 
   .header-logo img {
@@ -214,6 +256,8 @@ h6 {
   }
 
   .header-menu {
+    -webkit-transition: 0.15s ease-in-out;
+    transition: 0.15s ease-in-out;
     display: none;
   }
 
@@ -280,7 +324,53 @@ h6 {
 }
 @media (max-width: 480px) {
   .header-content {
+    -webkit-transition: 0.15s ease-in-out;
+    transition: 0.15s ease-in-out;
     height: 21.875vw;
+  }
+  .header-content.active {
+    -webkit-transition: 0.15s ease-in-out;
+    transition: 0.15s ease-in-out;
+    margin-top: 4.2857142857vw;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    height: 78.125vw;
+  }
+  .header-content.active .header-phone {
+    -webkit-transition: 0.15s ease-in-out;
+    transition: 0.15s ease-in-out;
+    display: inline-block;
+    position: absolute;
+    top: 75vw;
+    font-size: 4.6875vw;
+  }
+  .header-content.active .header-phone img {
+    width: 6.25vw;
+  }
+  .header-content.active .header-menu {
+    -webkit-transition: 0.15s ease-in-out;
+    transition: 0.15s ease-in-out;
+    z-index: 4;
+    margin: auto;
+    position: absolute;
+    top: 25vw;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .header-content.active .header-menu ul li {
+    margin-bottom: 4.2857142857vw;
+  }
+  .header-content.active .header-menu ul li a {
+    font-size: 5vw;
   }
 
   .header-logo img {
@@ -328,7 +418,7 @@ h6 {
   text-align: center;
   letter-spacing: 0.015em;
   color: #FFFFFF;
-  margin-top: 6.8125vw;
+  padding-top: 6.8125vw;
 }
 
 .main-form__subtitle {
@@ -700,7 +790,7 @@ h6 {
 }
 
 .geography-content {
-  margin-top: 6.25vw;
+  padding-top: 6.25vw;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -805,7 +895,7 @@ h6 {
 }
 .portfolio .title {
   text-align: center;
-  margin-top: 4.375vw;
+  padding-top: 4.375vw;
   font-weight: 500;
 }
 
@@ -1012,7 +1102,7 @@ h6 {
   }
   .portfolio .title {
     font-size: 9.375vw;
-    margin-top: 18.75vw;
+    padding-top: 18.75vw;
     line-height: 11.875vw;
   }
 
@@ -1101,7 +1191,7 @@ h6 {
   padding-bottom: 5vw;
 }
 .benefits .title {
-  margin-top: 4.9375vw;
+  padding-top: 4.9375vw;
   font-weight: 500;
   color: #001A33;
 }
@@ -1281,7 +1371,7 @@ h6 {
 .about .title {
   font-weight: 500;
   color: #001A33;
-  margin-top: 5.0625vw;
+  padding-top: 5.0625vw;
 }
 
 .about__content {
@@ -1406,7 +1496,7 @@ h6 {
     position: relative;
   }
   .about .title {
-    margin-top: 13.125vw;
+    padding-top: 13.125vw;
     font-size: 8.125vw;
     line-height: 10.3125vw;
   }
@@ -1840,7 +1930,7 @@ h6 {
 @media (max-width: 480px) {
   .contacts {
     position: relative;
-    padding: 18.75vw 0;
+    padding: 9.375vw 0;
     background: #4169C1;
     height: 312.5vw;
   }
@@ -2179,7 +2269,6 @@ footer .container {
 }
 
 .container {
-  border: 1px solid transparent;
   width: 75vw;
   margin: 0 auto;
 }

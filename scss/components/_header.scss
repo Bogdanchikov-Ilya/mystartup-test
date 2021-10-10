@@ -5,6 +5,7 @@
 }
 
 .header-content{
+  transition: .15s ease-in-out;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -39,6 +40,7 @@
 }
 
 .header-menu{
+  transition: .15s ease-in-out;
   display: flex;
   align-items: center;
   ul{
@@ -96,7 +98,31 @@
 
 @media (max-width: 960px) {
   .header-content{
+    transition: .15s ease-in-out;
     height: size(90, 700);
+    &.active{
+      transition: .15s ease-in-out;
+      margin-top: size(30, 700);
+      align-items: start;
+      height: size(500, 700);
+      .header-menu{
+        transition: .15s ease-in-out;
+        margin: auto;
+        position: absolute;
+        top: size(150, 700); left: 0; bottom: 0; right: 0;;
+        display: flex;
+        flex-direction: column;
+        ul{
+          transition: .15s ease-in-out;
+          li{
+            margin-bottom: size(30, 700);
+            a{
+              font-size: size(30, 700);
+            }
+          }
+        }
+      }
+    }
   }
 
   .header-logo{
@@ -117,6 +143,7 @@
   }
 
   .header-menu{
+    transition: .15s ease-in-out;
     display: none;
   }
 
@@ -170,7 +197,41 @@
 
 @media (max-width: 480px) {
   .header-content{
+    transition: .15s ease-in-out;
     height: size(70, 320);
+    &.active{
+      transition: .15s ease-in-out;
+      margin-top: size(30, 700);
+      align-items: start;
+      height: size(250, 320);
+      .header-phone{
+        transition: .15s ease-in-out;
+        display: inline-block;
+        position: absolute;
+        top: size(240, 320);
+        font-size: size(15, 320);
+        img{
+          width: size(20, 320);
+        }
+      }
+      .header-menu{
+        transition: .15s ease-in-out;
+        z-index: 4;
+        margin: auto;
+        position: absolute;
+        top: size(80, 320); left: 0; bottom: 0; right: 0;
+        display: flex;
+        flex-direction: column;
+        ul{
+          li{
+            margin-bottom: size(30, 700);
+            a{
+              font-size: size(16, 320);
+            }
+          }
+        }
+      }
+    }
   }
 
   .header-logo{

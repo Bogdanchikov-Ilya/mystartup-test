@@ -6,7 +6,7 @@
   .title{
     font-weight: 500;
     color: #001A33;
-    margin-top: size(81, 1600);
+    padding-top: size(81, 1600);
   }
 }
 .about__content{
@@ -121,7 +121,7 @@
     padding-bottom: size(65, 320);
     position: relative;
     .title{
-      margin-top: size(42, 320);
+      padding-top: size(42, 320);
       font-size: size(26, 320);
       line-height: size(33, 320);
     }
